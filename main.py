@@ -12,11 +12,11 @@ def dlfree():
     link_encryp = input('Escribe la URL: ')
     if link_encryp.__contains__('e'):
         codigos = link_encryp.removeprefix('https://xdlfree.com/e/')
-        pagina = f"https://uvs.ucm.cmw.sld.cu/webservice/pluginfile.php/577/core_competency/userevidence/{codigos}?token=b460a61906d764f345cc4720ffca843b&forcedownload=1"
+        pagina = f"{codigos}?token=&forcedownload=1"
 
     if link_encryp.__contains__('b'):
         codigos = link_encryp.removeprefix('https://xdlfree.com/b/')
-        pagina = f"https://uvs.ucm.cmw.sld.cu/webservice/pluginfile.php/1/blog/attachment/{codigos}?token=?token=b460a61906d764f345cc4720ffca843b&forcedownload=1"
+        pagina = f"{codigos}?token=?token=&forcedownload=1"
 
     if link_encryp.__contains__('c'):
         codigos = link_encryp.removeprefix('https://xdlfree.com/c/')
@@ -42,11 +42,11 @@ def dl_masivo():
 
             if link_carpeta.__contains__('e'):
                 codigos = link_carpeta.removeprefix('https://xdlfree.com/e/')
-                pagina = f"https://uvs.ucm.cmw.sld.cu/webservice/pluginfile.php/577/core_competency/userevidence/{codigos}?token=b460a61906d764f345cc4720ffca843b&forcedownload=1"
+                pagina = f"{codigos}?token=b460a61906d764f345cc4720ffca843b&forcedownload=1"
 
             if link_carpeta.__contains__('b'):
                 codigos = link_carpeta.removeprefix('https://xdlfree.com/b/')
-                pagina = f"https://uvs.ucm.cmw.sld.cu/webservice/pluginfile.php/1/blog/attachment/{codigos}?token=?token=b460a61906d764f345cc4720ffca843b&forcedownload=1"
+                pagina = f"{codigos}?token=?token=b460a61906d764f345cc4720ffca843b&forcedownload=1"
 
             if link_carpeta.__contains__('c'):
                 codigos = link_carpeta.removeprefix('https://xdlfree.com/c/')

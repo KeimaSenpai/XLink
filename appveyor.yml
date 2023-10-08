@@ -1,0 +1,69 @@
+image:
+- Visual Studio 2019
+- macOS
+- Ubuntu
+
+skip_branch_with_pr: true
+stack: python 3.11
+
+environment:
+  GITHUB_TOKEN:
+    secure: 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
+
+install:
+- pip install -r requirements.txt
+
+build_script:
+- flet pack main.py --name XLink --onedir --icon icon.ico --product-name XLink --add-data "asset;asset" --product-version "0.1.0" --copyright "Copyright (c) 2023 XCorporations Inc."
+
+test: off
+
+# Publish artifacts to GitHub Releases on "tag" builds
+deploy:
+  provider: GitHub
+  auth_token: $(GITHUB_TOKEN)
+  on:
+    APPVEYOR_REPO_TAG: true
+
+#
+#   Windows package
+# 
+for:
+-
+  matrix:
+    only:
+    - image: Visual Studio 2019
+
+  after_build:
+  - 7z a counter-windows.zip %CD%\dist\*.exe
+
+  artifacts:
+  - path: counter-windows.zip
+
+#
+#   macOS package
+# 
+-
+  matrix:
+    only:
+    - image: macOS
+
+  after_build:
+  - tar -czvf counter-macos.tar.gz -C dist counter.app
+
+  artifacts:
+  - path: counter-macos.tar.gz
+
+#
+#   Linux package
+# 
+-
+  matrix:
+    only:
+    - image: Ubuntu
+
+  after_build:
+  - tar -czvf counter-linux.tar.gz -C dist counter
+
+  artifacts:
+  - path: counter-linux.tar.gz

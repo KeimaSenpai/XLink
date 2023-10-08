@@ -1,0 +1,4 @@
+
+flet==0.10.3
+pyinstaller==6.0.0
+wget==3.2

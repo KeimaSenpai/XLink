@@ -37,7 +37,7 @@ for:
     - image: Visual Studio 2019
 
   after_build:
-  - 7z a XLink.zip %CD%\dist\*
+  - 7z a XLink.zip %CD%\dist\
 
   artifacts:
   - path: XLink.zip

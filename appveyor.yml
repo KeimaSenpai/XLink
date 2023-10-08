@@ -1,7 +1,7 @@
 image:
 - Visual Studio 2019
-- macOS
-- Ubuntu
+#- macOS
+#- Ubuntu
 
 skip_branch_with_pr: true
 stack: python 3.11
@@ -14,7 +14,7 @@ install:
 - pip install -r requirements.txt
 
 build_script:
-- flet pack main.py --name XLink --icon icon.ico --product-name XLink --add-data "asset;asset" --product-version "0.1.0" --copyright "Copyright (c) 2023 XCorporations Inc."
+- flet pack main.py --name XLink --onedir --icon icon.ico --product-name XLink --add-data "asset;asset" --product-version "0.1.0" --copyright "Copyright (c) 2023 XCorporations Inc."
 
 test: off
 
@@ -45,27 +45,27 @@ for:
 #
 #   macOS package
 # 
--
-  matrix:
-    only:
-    - image: macOS
+#-
+#  matrix:
+#    only:
+#    - image: macOS
 
-  after_build:
-  - tar -czvf counter-macos.tar.gz -C dist counter.app
+#  after_build:
+#  - tar -czvf counter-macos.tar.gz -C dist counter.app
 
-  artifacts:
-  - path: counter-macos.tar.gz
+#  artifacts:
+#  - path: counter-macos.tar.gz
 
 #
 #   Linux package
 # 
--
-  matrix:
-    only:
-    - image: Ubuntu
+#-
+#  matrix:
+#    only:
+#    - image: Ubuntu
 
-  after_build:
-  - tar -czvf counter-linux.tar.gz -C dist counter
+#  after_build:
+#  - tar -czvf counter-linux.tar.gz -C dist counter
 
-  artifacts:
-  - path: counter-linux.tar.gz
+#  artifacts:
+#  - path: counter-linux.tar.gz

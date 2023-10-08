@@ -14,7 +14,7 @@ install:
 - pip install -r requirements.txt
 
 build_script:
-- flet pack main.py --name XLink --onedir --icon icon.ico --product-name XLink --add-data "asset;asset" --product-version "0.1.0" --copyright "Copyright (c) 2023 XCorporations Inc."
+- flet pack main.py --name XLink --icon icon.ico --product-name XLink --add-data "asset;asset" --product-version "0.1.0" --copyright "Copyright (c) 2023 XCorporations Inc."
 
 test: off
 

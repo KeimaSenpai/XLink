@@ -17,10 +17,10 @@
 - Función de subir sin gastar megas.
 
 ### ⛶Plataformas
-❑ Windows
-❑ Linux (Proximo)
-❑ MAC (Proximo)
-❑ Android (Proximo)
+- ❑ Windows
+- ❑ Linux (Proximo)
+- ❑ MAC (Proximo)
+- ❑ Android (Proximo)
 
 ### ⛶Canal y aporte en Telegram
 https://t.me/xlink_cu

@@ -3,7 +3,7 @@
 
 # ☗ X Link ☗
 
-### ⛶ Info: XLink no es más que una app para descargar y subir archivos usando los megas nacionales .cu
+### ⛶ Info: XLink no es más que una app para descargar y subir archivos usando los megas nacionales .cu, la app esta creada 100% en Python con el framework Flet
 
 ### ⛶Funciones:
 - Sube y te da un enlace para que puedas compartir ese archivo con tus amigos https://xlink.cu

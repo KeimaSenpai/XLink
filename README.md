@@ -18,9 +18,9 @@
 
 ### ⛶Plataformas
 - ❑ Windows
-- ❑ Linux (Proximo)
-- ❑ MAC (Proximo)
-- ❑ Android (Proximo)
+- ❑ Linux (Próximo)
+- ❑ MAC (Próximo)
+- ❑ Android (Próximo)
 
 ### ⛶Canal y aporte en Telegram
 https://t.me/xlink_cu

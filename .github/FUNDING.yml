@@ -1,5 +1,3 @@
 # These are supported funding model platforms
-community_bridge: XLink
-github: [KeimaSenpai, h4cky-sys, RockstarDevCuba]
-tidelift: pypi
+github: [KeimaSenpai, RockstarDevCuba]
 custom: ['https://t.me/xlink_cu', 'https://t.me/XCorporations_Oficial']
